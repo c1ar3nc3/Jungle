@@ -20,17 +20,25 @@
     padding: 2em;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     color: green;
     background-color: green;
+    border: black solid 2px;
   }
 
   .card{
     display: inline;
     width: 300px;
+    padding: 1em;
     background-color: white;
     margin: 1em;
-    
+    border: black solid 2px;
+    opacity: 60%;
+
+    &:hover {
+      opacity: 100%;
+    }
   }
   
 }
