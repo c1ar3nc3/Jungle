@@ -1,19 +1,16 @@
 <section class="products-index">
-
-  <header class="page-header">
-
   <% if active_sale? %>
     <p class="alert alert-info">
-      There's an active <%= @active_sale.name %> going on!
-      <strong>Everything is <%= @active_sale.percent_off %>% off!</strong>
+      There's an active <%= @active_sale.name %> going on! <strong>Everything is <%= @active_sale.percent_off %>% off!</strong>
     </p>
   <% end %>
-  
-    <h1>Products</h1>
-  </header>
 
-  <div class="products">
-    <%= render @products %>
-  </div>
+<header class="page-header">
+ <h1>Products</h1>
+</header>
+
+<div class="products">
+  <%= render @products %>
+</div>
 
 </section>
